@@ -9,8 +9,7 @@ public class Main {
 		Scanner sc = new Scanner(System.in);
 		int menu;
 		String name;
-		int at, hp;
-		PlayableCharacter p = null;
+		
 		// while ~ switch ~ case 메뉴 구성
 		
 		// 1. 신규 캐릭터 추가
@@ -30,7 +29,8 @@ public class Main {
 			
 			switch(menu) {
 			case 1:
-				hd.insert(p);
+				PlayableCharacter p1 = new PlayableCharacter();
+				hd.insert(p1);
 				break;
 				
 			case 2:
